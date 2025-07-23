@@ -5,7 +5,7 @@ initStore([
     description: 'Explore a lush post-apocalyptic world filled with robotic creatures.',
     price: 69.95,
     discountPrice: 59.95,
-    image: 'assets/images/kid-01.jpg',
+    image: 'assets/images/service-1.jpg',
   },
   {
     id: 1,
