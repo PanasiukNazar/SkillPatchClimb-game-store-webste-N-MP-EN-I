@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta
+            name="description"
+            content="Explore our premium online store for the latest and greatest PC and console games. Discover top-rated titles, exclusive releases, and unbeatable deals for every type of gamer."
+        />
+        <meta name="author" content="GameStore Team" />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Skill Patch Climb</title>
+
+        <!-- Additional CSS Files -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="assets/css/bootstrap.min.css"
+        />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="assets/css/font-awesome.css"
+        />
+
+        <link rel="stylesheet" href="assets/css/templatemo-hexashop.css" />
+
+        <link rel="stylesheet" href="assets/css/owl-carousel.css" />
+
+        <link rel="stylesheet" href="assets/css/lightbox.css" />
+        <!--
+
+TemplateMo 571 Hexashop
+
+https://templatemo.com/tm-571-hexashop
+
+-->
+        <style>
+            /* Shopping Cart Section */
+            .shopping-cart.section {
+                margin-top: 80px;
+                margin-bottom: 80px;
+                background-color: #fff;
+                padding: 30px 15px;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                font-family: "Arial", sans-serif;
+            }
+
+            .shopping-summary {
+                width: 100%;
+                border-collapse: collapse;
+                font-size: 14px;
+                color: #2a2a2a;
+            }
+
+            .shopping-summary thead tr.main-heading {
+                background-color: #2a2a2a;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 13px;
+            }
+
+            .shopping-summary thead th {
+                padding: 15px 10px;
+                text-align: center;
+                border-bottom: 2px solid #ddd;
+            }
+
+            .shopping-summary tbody tr {
+                border-bottom: 1px solid #eee;
+            }
+
+            .shopping-summary tbody tr:hover {
+                background-color: #f9f9f9;
+            }
+
+            .shopping-summary tbody td {
+                padding: 15px 10px;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            .shopping-summary tbody td.image img {
+                max-width: 80px;
+                border-radius: 5px;
+                object-fit: cover;
+            }
+
+            .shopping-summary .product-des p.product-name a {
+                font-weight: 700;
+                color: #2a2a2a;
+                text-decoration: none;
+            }
+
+            .shopping-summary .product-des p.product-name a:hover {
+                color: #555;
+                text-decoration: underline;
+            }
+
+            .shopping-summary .product-des p.product-des {
+                font-size: 12px;
+                color: #777;
+                margin-top: 5px;
+            }
+
+            .shopping-summary .price span,
+            .shopping-summary .total-amount span {
+                font-weight: 700;
+                color: #2a2a2a;
+                font-size: 16px;
+            }
+
+            .qty .input-group {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 60px;
+                margin: 0 auto;
+            }
+
+            .qty .input-number {
+                width: 40px;
+                height: 32px;
+                text-align: center;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                margin: 5px 0;
+                pointer-events: none;
+                background-color: #f9f9f9;
+            }
+
+            .qty .button.minus button,
+            .qty .button.plus button {
+                background-color: #2a2a2a;
+                border: none;
+                color: #fff;
+                font-size: 20px;
+                width: 40px;
+                height: 30px;
+                cursor: pointer;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+            .qty .button.minus button:hover,
+            .qty .button.plus button:hover {
+                background-color: #555;
+            }
+
+            .action a {
+                color: #2a2a2a;
+                font-size: 18px;
+                cursor: pointer;
+                transition: color 0.3s ease;
+            }
+
+            .action a:hover {
+                color: #d9534f;
+            }
+
+            .total-amount .right {
+                text-align: right;
+                margin-top: 30px;
+            }
+
+            .total-amount ul {
+                list-style: none;
+                padding: 0;
+                margin-bottom: 15px;
+            }
+
+            .total-amount ul li {
+                font-size: 18px;
+                font-weight: 700;
+                color: #2a2a2a;
+                margin-bottom: 5px;
+            }
+
+            .total-amount ul li.last span {
+                font-size: 22px;
+                color: #2a2a2a;
+            }
+
+            .button5 a.btn {
+                background-color: #2a2a2a;
+                color: #fff;
+                padding: 12px 30px;
+                margin-left: 15px;
+                text-transform: uppercase;
+                font-weight: 700;
+                border-radius: 4px;
+                display: inline-block;
+                transition: background-color 0.3s ease;
+                text-decoration: none;
+            }
+
+            .button5 a.btn:hover {
+                background-color: #555;
+                color: #fff;
+            }
+
+            /* Responsive overflow fix */
+            .row[style*="overflow: auto"] {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- ***** Preloader Start ***** -->
+        <div id="preloader">
+            <div class="jumper">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!-- ***** Preloader End ***** -->
+
+        <!-- ***** Header Area Start ***** -->
+        <header class="header-area header-sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav
+                            class="main-nav"
+                            style="
+                                display: flex;
+                                align-items: baseline;
+                                justify-content: space-between;
+                            "
+                        >
+                            <!-- ***** Logo Start ***** -->
+                            <a href="index.html" class="logo">
+                                <p style="color: #2a2a2a">Skill Patch Climb</p>
+                            </a>
+                            <!-- ***** Logo End ***** -->
+                            <!-- ***** Menu Start ***** -->
+                            <ul class="nav">
+                                <li class="scroll-to-section">
+                                    <a href="#top" class="active">Home</a>
+                                </li>
+                                <li class="scroll-to-section">
+                                    <a href="about.html" class="active"
+                                        >About</a
+                                    >
+                                </li>
+                                <li class="scroll-to-section">
+                                    <a href="products.html" class="active"
+                                        >Shop</a
+                                    >
+                                </li>
+                                <li class="scroll-to-section">
+                                    <a href="cart.html" class="active">Cart</a>
+                                </li>
+                                <li class="scroll-to-section">
+                                    <a href="favorite.html" class="active"
+                                        >Favorite</a
+                                    >
+                                </li>
+                                <li class="scroll-to-section">
+                                    <a href="contact.html" class="active"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ***** Header Area End ***** -->
+
+        <!-- Shopping Cart -->
+        <div class="shopping-cart section">
+            <div class="container">
+                <div class="row" style="overflow: auto">
+                    <div class="col-12">
+                        <!-- Shopping Summary -->
+                        <table class="table shopping-summary">
+                            <thead>
+                                <tr class="main-heading">
+                                    <th>PRODUCT</th>
+                                    <th>TITLE</th>
+                                    <th class="text-center">PRICE</th>
+                                    <th class="text-center">QUANTITY</th>
+                                    <th class="text-center">TOTAL</th>
+                                    <th class="text-center">
+                                        <i class="ti-trash remove-icon"></i>
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody data-store-el="cartItems"></tbody>
+                        </table>
+                        <!--/ End Shopping Summary -->
+                        <template data-store-el="cartItemTemplate">
+                            <tr>
+                                <td class="image" data-title="No">
+                                    <img data-store-el="itemImage" alt="#" />
+                                </td>
+                                <td
+                                    class="product-des"
+                                    data-title="Description"
+                                >
+                                    <p class="product-name">
+                                        <a data-store-el="itemTitle"></a>
+                                    </p>
+                                    <p
+                                        class="product-des"
+                                        data-store-el="itemDescription"
+                                    ></p>
+                                </td>
+                                <td class="price" data-title="Price">
+                                    <span data-store-el="itemPrice"></span>
+                                </td>
+                                <td class="qty" data-title="Qty">
+                                    <!-- Input Order -->
+                                    <div
+                                        class="input-group"
+                                        style="
+                                            display: flex;
+                                            flex-direction: column;
+                                        "
+                                    >
+                                        <div class="button minus">
+                                            <button
+                                                type="button"
+                                                class="btn btn-primary btn-number"
+                                                data-type="minus"
+                                                data-field="quant[1]"
+                                                data-store-el="cartItemDecrementCount"
+                                            >
+                                                -
+                                            </button>
+                                        </div>
+                                        <input
+                                            type="text"
+                                            name="quant[1]"
+                                            class="input-number"
+                                            data-min="1"
+                                            data-max="100"
+                                            data-store-el="cartItemCount"
+                                            disabled
+                                        />
+                                        <div class="button plus">
+                                            <button
+                                                type="button"
+                                                class="btn btn-primary btn-number"
+                                                data-type="plus"
+                                                data-field="quant[1]"
+                                                data-store-el="cartItemIncrementCount"
+                                            >
+                                                +
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--/ End Input Order -->
+                                </td>
+                                <td class="total-amount" data-title="Total">
+                                    <span data-store-el="cartItemTotal"></span>€
+                                </td>
+                                <td class="action" data-title="Remove">
+                                    <a data-store-el="cartItemRemove">
+                                        <i class="fa fa-solid fa-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </template>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Total Amount -->
+                        <div class="total-amount">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-12">
+                                    <div class="right">
+                                        <ul>
+                                            <li class="last">
+                                                Total Amount
+                                                <span>
+                                                    <span
+                                                        data-store-el="cartTotal"
+                                                    ></span
+                                                    >€
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <div class="button5">
+                                            <a href="checkout.html" class="btn"
+                                                >Proceed to Checkout</a
+                                            >
+                                            <a href="index.html" class="btn"
+                                                >Continue Shopping</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ End Total Amount -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Shopping Cart -->
+
+        <!-- ***** Footer Start ***** -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="first-item">
+                            <div class="logo">
+                                <h4>Skill Patch Climb</h4>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#"
+                                        >700 March Rd G, Kanada, ON K2K 2V9</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#">skill_patch_climb@gmail.com</a>
+                                </li>
+                                <li><a href="#">+16132549994</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4>Games &amp; Platforms</h4>
+                        <ul>
+                            <li><a href="#">PC Games</a></li>
+                            <li><a href="#">PlayStation Games</a></li>
+                            <li><a href="#">Xbox Games</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="index.html">Homepage</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4>Help &amp; Info</h4>
+                        <ul>
+                            <li>
+                                <a href="privacy-policy.html">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="cookie-policy.html">Cookie Policy</a>
+                            </li>
+                            <li>
+                                <a href="terms-of-use.html">Terms of Use</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Cookie Banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Cookie Notice</h2>
+            </div>
+            <div class="data">
+                <p>
+                    This website uses cookies to enhance your browsing and
+                    shopping experience in our PC and console games store.
+                    <a href="cookie-policy.html">Learn more...</a>
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">I accept</button>
+                <button class="cookie-button" id="declineBtn">I decline</button>
+            </div>
+        </div>
+        <!-- End Cookie Banner -->
+
+        <!-- jQuery (via jQuery CDN) -->
+        <script
+            src="https://code.jquery.com/jquery-2.1.0.min.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Bootstrap (via Bootstrap CDN) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Plugins -->
+        <script src="assets/js/owl-carousel.js"></script>
+        <script src="assets/js/accordions.js"></script>
+        <script src="assets/js/datepicker.js"></script>
+        <script src="assets/js/scrollreveal.min.js"></script>
+        <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <script src="assets/js/imgfix.min.js"></script>
+        <script src="assets/js/slick.js"></script>
+        <script src="assets/js/lightbox.js"></script>
+        <script src="assets/js/isotope.js"></script>
+
+        <!-- Global Init -->
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/cookiebanner.js"></script>
+        <script src="assets/js/store.js"></script>
+        <script src="products.js"></script>
+    </body>
+</html>
